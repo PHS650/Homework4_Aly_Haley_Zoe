@@ -7,6 +7,7 @@ Our primary unit of analysis is songs. We will be using all the songs in the Tid
 The following code will be used to remove duplicate songs, indicated by track_id:
 
 ```{r}
+spotify_songs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-21/spotify_songs.csv', show_col_types = FALSE)
 spotify_songs = spotify_songs[!duplicated(spotify_songs$track_id),]
 length(spotify_songs$track_id)
 ```
