@@ -1,9 +1,23 @@
-# Introduction
+# Chapter 2
 
-This is a book created from markdown and executable code.
+Provide detailed information on constructs/variables in your mini-dataset (you can choose how you present this)
 
-See @knuth84 for additional discussion of literate programming.
+| variable | class | range | description |
 
-```{r}
-1 + 1
-```
+|:-|:-|:-|:-|
+
+|
+
+| loudness | double | -46.448 to 1.275 | The overall loudness of a track in decibels (dB) averaged across the entire track. |
+
+|tempo | double |0-239.44 | estimated track tempo in beats per minute (bpm)|
+
+| norm.loudness   | double    | 0-1               | a min-max normalized spotify_songs\$loudness                                                                      |
+| norm.tempo      | double    | 0-1               | a min-max normalized spotify_songs\$tempo                                                                         |
+| intensity       | double    | 0-1               | the average of energy, normalized tempo, and 1- normalized loudness, where higher scores imply higher intensity                                                                              |
+| minutes   | double    | 0.07-8.6 minutes  | The duration of song in minutes, converted from milliseconds (duration_ms)                                        |
+| popularity      | double | 1, 2, 3 | Song popularity characterized into three tertiles. 1 represents low 0-33, 2 represents medium 34-66, and 2 represents high 64-100 ranges from the numeric track_popularity variable.                                                                                          |
+
+: New Spotify data variables {#tbl-newvars}
+
+\@tbl-newvars describes 5 new variables, norm.loudness, norm.tempo, itensity, duration_mins, popularity created from the Spotify dataset. The table provides the class, range, and description of each new variable.
