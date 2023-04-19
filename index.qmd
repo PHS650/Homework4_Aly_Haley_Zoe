@@ -2,8 +2,7 @@
 
 ## Dataset
 
-The following analysis will use data from the [Tidy Tuesday Spotify Songs dataset](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-01-21/readme.md).
-Here is the R code to import the dataset:
+The following analysis will use data from the [Tidy Tuesday Spotify Songs dataset](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-01-21/readme.md). Here is the R code to import the dataset:
 
 ```{r}
 spotify_songs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-21/spotify_songs.csv', show_col_types = FALSE)
