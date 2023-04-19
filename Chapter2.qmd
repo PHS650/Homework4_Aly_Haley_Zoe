@@ -1,17 +1,9 @@
 # Chapter 2
 
-Provide detailed information on constructs/variables in your mini-dataset (you can choose how you present this)
-
 | variable | class | range | description |
-
 |:-|:-|:-|:-|
-
-|
-
 | loudness | double | -46.448 to 1.275 | The overall loudness of a track in decibels (dB) averaged across the entire track. |
-
 |tempo | double |0-239.44 | estimated track tempo in beats per minute (bpm)|
-
 | norm.loudness   | double    | 0-1               | a min-max normalized spotify_songs\$loudness                                                                      |
 | norm.tempo      | double    | 0-1               | a min-max normalized spotify_songs\$tempo                                                                         |
 | intensity       | double    | 0-1               | the average of energy, normalized tempo, and 1- normalized loudness, where higher scores imply higher intensity                                                                              |

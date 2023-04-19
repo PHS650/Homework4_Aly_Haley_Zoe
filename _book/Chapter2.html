@@ -140,17 +140,69 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Provide detailed information on constructs/variables in your mini-dataset (you can choose how you present this)</p>
-<p>variable | class | range | description |</p>
-<p>|:-|:-|:-|:-|</p>
-<p>loudness | double | -46.448 to 1.275 | The overall loudness of a track in decibels (dB) averaged across the entire track. |</p>
-<p>|tempo | double |0-239.44 | estimated track tempo in beats per minute (bpm)|</p>
-<p>norm.loudness | double | 0-1 | a min-max normalized spotify_songs$loudness |<br>
-norm.tempo | double | 0-1 | a min-max normalized spotify_songs$tempo |<br>
-intensity | double | 0-1 | the average of energy, normalized tempo, and 1- normalized loudness, where higher scores imply higher intensity |<br>
-minutes | double | 0.07-8.6 minutes | The duration of song in minutes, converted from milliseconds (duration_ms) |<br>
-popularity | double | 1, 2, 3 | Song popularity characterized into three tertiles. 1 represents low 0-33, 2 represents medium 34-66, and 2 represents high 64-100 ranges from the numeric track_popularity variable. |</p>
-<p>: New Spotify data variables {#tbl-newvars}</p>
+<div id="tbl-newvars" class="anchored">
+<table class="table">
+<caption>Table&nbsp;1.1: New Spotify data variables</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">variable</th>
+<th style="text-align: left;">class</th>
+<th style="text-align: left;">range</th>
+<th style="text-align: left;">description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">loudness</td>
+<td style="text-align: left;">double</td>
+<td style="text-align: left;">-46.448 to 1.275</td>
+<td style="text-align: left;">The overall loudness of a track in decibels (dB) averaged across the entire track.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tempo</td>
+<td style="text-align: left;">double</td>
+<td style="text-align: left;">0-239.44</td>
+<td style="text-align: left;">estimated track tempo in beats per minute (bpm)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">norm.loudness</td>
+<td style="text-align: left;">double</td>
+<td style="text-align: left;">0-1</td>
+<td style="text-align: left;">a min-max normalized spotify_songs$loudness</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">norm.tempo</td>
+<td style="text-align: left;">double</td>
+<td style="text-align: left;">0-1</td>
+<td style="text-align: left;">a min-max normalized spotify_songs$tempo</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">intensity</td>
+<td style="text-align: left;">double</td>
+<td style="text-align: left;">0-1</td>
+<td style="text-align: left;">the average of energy, normalized tempo, and 1- normalized loudness, where higher scores imply higher intensity</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">minutes</td>
+<td style="text-align: left;">double</td>
+<td style="text-align: left;">0.07-8.6 minutes</td>
+<td style="text-align: left;">The duration of song in minutes, converted from milliseconds (duration_ms)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">popularity</td>
+<td style="text-align: left;">double</td>
+<td style="text-align: left;">1, 2, 3</td>
+<td style="text-align: left;">Song popularity characterized into three tertiles. 1 represents low 0-33, 2 represents medium 34-66, and 2 represents high 64-100 ranges from the numeric track_popularity variable.</td>
+</tr>
+</tbody>
+</table>
+</div>
 <p>@tbl-newvars describes 5 new variables, norm.loudness, norm.tempo, itensity, duration_mins, popularity created from the Spotify dataset. The table provides the class, range, and description of each new variable.</p>
 
 
