@@ -1,6 +1,6 @@
-
-project: type: website
-output-dir: docs
+project: 
+  type: website
+  output-dir: docs
 
 book:
   title: "Homework4"
