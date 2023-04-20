@@ -47,5 +47,12 @@
     "title": "References",
     "section": "",
     "text": "References"
+  },
+  {
+    "objectID": "Scoring/Scoring.html",
+    "href": "Scoring/Scoring.html",
+    "title": "",
+    "section": "",
+    "text": "library(knitr)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nspotify_songs &lt;- readr::read_csv(\"../Data/raw_spotify.csv\", show_col_types = FALSE)\n\nspotify_songs = spotify_songs[!duplicated(spotify_songs$track_id),]\n\nspotify_songs &lt;- select(spotify_songs, loudness, tempo, energy, duration_ms, track_popularity)\n\nspotify_songs$norm.loudness = (spotify_songs$loudness - min(spotify_songs$loudness)) / (max(spotify_songs$loudness) - min(spotify_songs$loudness))\n\nspotify_songs$norm.tempo = (spotify_songs$tempo - min(spotify_songs$tempo)) / (max(spotify_songs$tempo) - min(spotify_songs$tempo))\n\nspotify_songs$intensity = (spotify_songs$energy + (1-spotify_songs$norm.loudness) + spotify_songs$norm.tempo)/3\n\nspotify_songs$minutes = spotify_songs$duration_ms/60000\n\nspotify_songs$popularity = ifelse(spotify_songs$track_popularity &lt;= 33, 1,\n      ifelse(spotify_songs$track_popularity &lt;66 & spotify_songs$track_popularity&gt;33, 2, ifelse(spotify_songs$track_popularity &gt;= 66, 3, NA)))\n\nwrite.csv(spotify_songs, \"../Data/scored_spotify.csv\", row.names = FALSE)"
   }
 ]
