@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Homework4",
+    "title": "Homework 4",
     "section": "",
     "text": "Chapter 1"
   },
@@ -30,22 +30,29 @@
   {
     "objectID": "index.html#dataset",
     "href": "index.html#dataset",
-    "title": "Homework4",
+    "title": "Homework 4",
     "section": "Dataset",
     "text": "Dataset\nThe following analysis will use data from the Tidy Tuesday Spotify Songs dataset. Here is the R code to import the dataset:\n\nspotify_songs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-21/spotify_songs.csv', show_col_types = FALSE)\n\nThe dataset contains 32,883 songs in the genres of EDM, Latin, Pop, R&B, Rap, & Rock and 23 variables describing characteristics of the songs and the playlists they were found in. The data dictionary can be found here.\nThe data was accessed 4/5/2023."
   },
   {
     "objectID": "index.html#research-questions",
     "href": "index.html#research-questions",
-    "title": "Homework4",
+    "title": "Homework 4",
     "section": "Research Questions",
     "text": "Research Questions\nOur project will investigate the following research questions:\n\nAre shorter songs more likely to be popular?\nAre more intense songs more likely to be popular?"
   },
   {
     "objectID": "index.html#research-hypotheses",
     "href": "index.html#research-hypotheses",
-    "title": "Homework4",
+    "title": "Homework 4",
     "section": "Research Hypotheses",
     "text": "Research Hypotheses\nWe hypothesize that shorter songs are more likely to be popular.\nWe hypothesize that more intense songs are more likely to be popular."
+  },
+  {
+    "objectID": "Chapter3.html",
+    "href": "Chapter3.html",
+    "title": "2  Chapter 3",
+    "section": "",
+    "text": "Purpose: provide descriptive information on data cleaning, i.e. inclusion/exclusion criteria\nOur primary unit of analysis is songs. We will be using all the songs in the Tidy Tuesday Spotify datasets. The only exclusion criteria we will apply is to remove duplicate songs, indicated by track_id.\nThe following code will be used to remove duplicate songs, indicated by track_id:\n\nspotify_songs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-21/spotify_songs.csv', show_col_types = FALSE)\nspotify_songs = spotify_songs[!duplicated(spotify_songs$track_id),]\nlength(spotify_songs$track_id)\n\n[1] 28356\n\n\nThis reduces the sample size from 32833 songs to 28356 songs."
   }
 ]

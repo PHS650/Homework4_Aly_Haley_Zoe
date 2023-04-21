@@ -2,8 +2,9 @@ project:
   type: book
   output-dir: docs
 
+
 book:
-  title: "Homework4"
+  title: "Homework 4"
   author: "Aly, Haley & Zoe"
   date: "4/19/2023"
   chapters:
@@ -11,6 +12,8 @@ book:
     - Chapter2.qmd
     - Chapter3.qmd
     - references.qmd
+  navbar:
+    title: Homework4
 
 bibliography: references.bib
 
