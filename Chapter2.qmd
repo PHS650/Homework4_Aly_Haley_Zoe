@@ -1,7 +1,7 @@
-# Chapter 2
+# Chapter 2 {.unnumbered}
 
 | variable      | class  | range            | description                                                                                                                                                                          |
-|:--------------|:-------|:-----------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:--------|:--------|:--------|:----------------------------------------------|
 | loudness      | double | -46.448 to 1.275 | The overall loudness of a track in decibels (dB) averaged across the entire track.                                                                                                   |
 | tempo         | double | 0-239.44         | estimated track tempo in beats per minute (bpm)                                                                                                                                      |
 | norm.loudness | double | 0-1              | a min-max normalized spotify_songs\$loudness                                                                                                                                         |
