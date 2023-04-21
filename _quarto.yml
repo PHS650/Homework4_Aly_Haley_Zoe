@@ -12,8 +12,6 @@ book:
     - Chapter2.qmd
     - Chapter3.qmd
     - references.qmd
-  navbar:
-    title: Homework4
 
 bibliography: references.bib
 
