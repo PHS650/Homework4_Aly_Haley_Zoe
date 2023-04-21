@@ -2,16 +2,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "",
+    "title": "Homework4",
     "section": "",
-    "text": "The following analysis will use data from the Tidy Tuesday Spotify Songs dataset. Here is the R code to import the dataset:\n\nspotify_songs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-21/spotify_songs.csv', show_col_types = FALSE)\n\nThe dataset contains 32,883 songs in the genres of EDM, Latin, Pop, R&B, Rap, & Rock and 23 variables describing characteristics of the songs and the playlists they were found in. The data dictionary can be found here.\nThe data was accessed 4/5/2023.\n\n\n\nOur project will investigate the following research questions:\n\nAre shorter songs more likely to be popular?\nAre more intense songs more likely to be popular?\n\n\n\n\nWe hypothesize that shorter songs are more likely to be popular.\nWe hypothesize that more intense songs are more likely to be popular."
+    "text": "Chapter 1"
   },
   {
     "objectID": "Chapter2.html",
     "href": "Chapter2.html",
-    "title": "",
+    "title": "1  Chapter 2",
     "section": "",
-    "text": "Chapter 2\n\n\nTable 1: New Spotify data variables\n\n\n\n\n\n\n\n\nvariable\nclass\nrange\ndescription\n\n\n\n\nloudness\ndouble\n-46.448 to 1.275\nThe overall loudness of a track in decibels (dB) averaged across the entire track.\n\n\ntempo\ndouble\n0-239.44\nestimated track tempo in beats per minute (bpm)\n\n\nnorm.loudness\ndouble\n0-1\na min-max normalized spotify_songs$loudness\n\n\nnorm.tempo\ndouble\n0-1\na min-max normalized spotify_songs$tempo\n\n\nintensity\ndouble\n0-1\nthe average of energy, normalized tempo, and 1- normalized loudness, where higher scores imply higher intensity\n\n\nminutes\ndouble\n0.07-8.6 minutes\nThe duration of song in minutes, converted from milliseconds (duration_ms)\n\n\npopularity\ndouble\n1, 2, 3\nSong popularity characterized into three tertiles. 1 represents low 0-33, 2 represents medium 34-66, and 2 represents high 64-100 ranges from the numeric track_popularity variable.\n\n\n\n\n@tbl-newvars describes 5 new variables, norm.loudness, norm.tempo, itensity, duration_mins, popularity created from the Spotify dataset. The table provides the class, range, and description of each new variable."
+    "text": "Table 1.1: New Spotify data variables\n\n\n\n\n\n\n\n\nvariable\nclass\nrange\ndescription\n\n\n\n\nloudness\ndouble\n-46.448 to 1.275\nThe overall loudness of a track in decibels (dB) averaged across the entire track.\n\n\ntempo\ndouble\n0-239.44\nestimated track tempo in beats per minute (bpm)\n\n\nnorm.loudness\ndouble\n0-1\na min-max normalized spotify_songs$loudness\n\n\nnorm.tempo\ndouble\n0-1\na min-max normalized spotify_songs$tempo\n\n\nintensity\ndouble\n0-1\nthe average of energy, normalized tempo, and 1- normalized loudness, where higher scores imply higher intensity\n\n\nminutes\ndouble\n0.07-8.6 minutes\nThe duration of song in minutes, converted from milliseconds (duration_ms)\n\n\npopularity\ndouble\n1, 2, 3\nSong popularity characterized into three tertiles. 1 represents low 0-33, 2 represents medium 34-66, and 2 represents high 64-100 ranges from the numeric track_popularity variable.\n\n\n\n\n@tbl-newvars describes 5 new variables, norm.loudness, norm.tempo, itensity, duration_mins, popularity created from the Spotify dataset. The table provides the class, range, and description of each new variable."
   },
   {
     "objectID": "Scoring/Scoring.html",
@@ -26,5 +26,26 @@
     "title": "",
     "section": "",
     "text": "References"
+  },
+  {
+    "objectID": "index.html#dataset",
+    "href": "index.html#dataset",
+    "title": "Homework4",
+    "section": "Dataset",
+    "text": "Dataset\nThe following analysis will use data from the Tidy Tuesday Spotify Songs dataset. Here is the R code to import the dataset:\n\nspotify_songs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-21/spotify_songs.csv', show_col_types = FALSE)\n\nThe dataset contains 32,883 songs in the genres of EDM, Latin, Pop, R&B, Rap, & Rock and 23 variables describing characteristics of the songs and the playlists they were found in. The data dictionary can be found here.\nThe data was accessed 4/5/2023."
+  },
+  {
+    "objectID": "index.html#research-questions",
+    "href": "index.html#research-questions",
+    "title": "Homework4",
+    "section": "Research Questions",
+    "text": "Research Questions\nOur project will investigate the following research questions:\n\nAre shorter songs more likely to be popular?\nAre more intense songs more likely to be popular?"
+  },
+  {
+    "objectID": "index.html#research-hypotheses",
+    "href": "index.html#research-hypotheses",
+    "title": "Homework4",
+    "section": "Research Hypotheses",
+    "text": "Research Hypotheses\nWe hypothesize that shorter songs are more likely to be popular.\nWe hypothesize that more intense songs are more likely to be popular."
   }
 ]
