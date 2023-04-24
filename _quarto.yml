@@ -1,9 +1,9 @@
-project:
-  type: website
+project: 
+  type: book
   output-dir: docs
 
 book:
-  title: "Homework4"
+  title: "Homework 4"
   author: "Aly, Haley & Zoe"
   date: "4/19/2023"
   chapters:
