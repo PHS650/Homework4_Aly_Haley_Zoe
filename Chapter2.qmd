@@ -1,7 +1,9 @@
 # Chapter 2 {.unnumbered}
 
+@tbl-newvars describes 5 new variables, norm.loudness, norm.tempo, itensity, duration_mins, popularity created from the Spotify dataset. The table provides the class, range, and description of each new variable.
+
 | variable      | class  | range            | description                                                                                                                                                                          |
-|:-----------|:-----------|:-----------|:-------------------------------------|
+|--------------|--------------|--------------|-------------------------------|
 | loudness      | double | -46.448 to 1.275 | The overall loudness of a track in decibels (dB) averaged across the entire track.                                                                                                   |
 | tempo         | double | 0-239.44         | estimated track tempo in beats per minute (bpm)                                                                                                                                      |
 | norm.loudness | double | 0-1              | a min-max normalized spotify_songs\$loudness                                                                                                                                         |
@@ -11,5 +13,3 @@
 | popularity    | double | 1, 2, 3          | Song popularity characterized into three tertiles. 1 represents low 0-33, 2 represents medium 34-66, and 2 represents high 64-100 ranges from the numeric track_popularity variable. |
 
 : New Spotify data variables {#tbl-newvars}
-
-@tbl-newvars describes 5 new variables, norm.loudness, norm.tempo, itensity, duration_mins, popularity created from the Spotify dataset. The table provides the class, range, and description of each new variable.
