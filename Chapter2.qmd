@@ -13,3 +13,4 @@
 | popularity    | double | 1, 2, 3          | Song popularity characterized into three tertiles. 1 represents low 0-33, 2 represents medium 34-66, and 2 represents high 64-100 ranges from the numeric track_popularity variable. |
 
 : New Spotify data variables {#tbl-newvars}
+
